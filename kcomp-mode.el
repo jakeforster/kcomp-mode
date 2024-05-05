@@ -33,6 +33,11 @@
 
 (require 'cl-lib)
 
+(defgroup kcomp-mode nil
+  "Kill compilation buffer on success."
+  :prefix "kcomp-"
+  :group 'convenience)
+
 ;;;###autoload
 (define-minor-mode kcomp-mode
   "Toggle KComp mode.
