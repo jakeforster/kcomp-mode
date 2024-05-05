@@ -1,3 +1,3 @@
 #+title: KComp mode for Emacs
 
-KComp mode is a minor mode for Emacs. If KComp mode is enabled in the buffer when `compile' is invoked, the resulting compilation buffer will be killed upon successful compilation.
+KComp mode is a minor mode for Emacs. If KComp mode is enabled in the buffer when =compile= is invoked, the resulting compilation buffer will be killed upon successful compilation.
