@@ -3,7 +3,7 @@
 ;; Copyright (C) 2024 Jake Forster
 
 ;; Author: Jake Forster <jakecameron.forster@gmail.com>
-;; Version: 0.1.0
+;; Version: 1.0.0
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: convenience
 ;; URL: https://github.com/jakeforster/kcomp-mode
