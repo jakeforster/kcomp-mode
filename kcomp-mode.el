@@ -61,7 +61,7 @@ compilation."
   "A list of compilation buffers to be killed upon successful completion.")
 
 (defun kcomp-mode--update (&rest _args)
-  (setq kcomp-mode--was-enabled (or global-kcomp-mode (bound-and-true-p kcomp-mode)))
+  (setq kcomp-mode--was-enabled (bound-and-true-p kcomp-mode))
 
   ;; Remove any compilation buffers that were killed before their
   ;; compilation finished.
