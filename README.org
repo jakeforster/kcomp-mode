@@ -1,3 +1,21 @@
 #+title: KComp mode for Emacs
 
+* Archive notice
+
+Archived in December 2024.  Most of the functionality can be achieved with the code snippet below.
+
+#+begin_src elisp
+
+(defun kcomp-mode--finish (buffer msg)
+  (when (and (string-prefix-p "latexmk" (car compilation-arguments))
+             (string-match-p "^finished" msg))
+    (let ((win (get-buffer-window buffer 'visible)))
+      (when win
+        (quit-window nil win)))))
+(add-to-list 'compilation-finish-functions #'kcomp-mode--finish)
+
+#+end_src
+
+* About
+
 KComp mode is a minor mode for Emacs. If KComp mode is enabled in the buffer when =compile= is invoked, the resulting compilation buffer will be killed upon successful compilation.
